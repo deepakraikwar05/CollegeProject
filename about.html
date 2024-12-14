@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <section class="Sub-header">
+      <nav>
+        <a href="index.html"><img src="hostel.png.png" /></a>
+        <h2 class="animate__animated wow animate__fadeIn" id="edu">
+          Hostel Hevan
+        </h2>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1 class="animate__animated animate__bounceInDown">About Us</h1>
+    </section>
+
+    <!-- -----------About us content --------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col animate__animated animate__fadeInUp">
+          <h1>We are the world's largest University</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur,
+            dolorem culpa? Labore laudantium officia sed, obcaecati rerum
+            tenetur dolores, odio eius quidem itaque dolore. Minima eaque nulla
+            nemo consectetur doloribus!
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="about.png.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ Footer ----- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati,
+        accusantium. Commodi velit sit minus ea ipsa <br />
+        iste perspiciatis voluptas hic. Lorem ipsum dolor sit amet.
+      </p>
+
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+
+      <p>Made with<i class="fa-solid fa-heart"></i> by Deepak Raikwar..</p>
+    </section>
+
+    <!-- ---- javaScript for Toggle menu ------ -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
